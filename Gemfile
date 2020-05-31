@@ -51,17 +51,13 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 gem 'haml-rails'
+
 gem 'erb2haml'
+
 gem 'font-awesome-sass'
+
 gem 'devise'
-<<<<<<< HEAD
-gem 'pry-rails'
-=======
 
 gem 'pry-rails'
-
-gem 'carrierwave'
-
-gem 'mini_magick'
->>>>>>> aa74daa86d838792b8accca6951f26c2e2acafd3
