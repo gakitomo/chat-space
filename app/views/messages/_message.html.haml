@@ -1,8 +1,8 @@
 .message
   .message-info
-    .sender
+    .message-info__sender
       = message.user.name
-    .date
+    .message-info__date
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .text
     - if message.content.present?

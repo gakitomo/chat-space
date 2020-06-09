@@ -13,21 +13,6 @@
 
   .message-list
     = render @messages
-  -# .message-list
-  -#   .message-info
-  -#     .sender
-  -#       dedede
-  -#     .date
-  -#       2020.5.24(Sun) 12:00:00
-  -#   .text
-  -#     yyy
-  -#   .message-info
-  -#     .sender
-  -#       dedede
-  -#     .date
-  -#       2020.5.24(Sun) 13:00:00
-  -#   .text
-  -#     zzz
 
   .message-form
     = form_for [@group, @message] do |f|
@@ -38,21 +23,3 @@
             = icon('fa', 'image')
             = f.file_field :image, class: "hidden"
         =f.submit "Send",class: "submit-btn"
-
-  -# .form
-  -#   = form_for [@group, @message] do |f|
-  -#     = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-  -#     .form__mask
-  -#       = f.label :image, class: 'form__mask__image' do
-  -#         = icon('fas', 'image', class: 'icon')
-  -#         = f.file_field :image, class: 'hidden'
-  -#     = f.submit 'Send', class: 'form__submit'
-
-  -# .message-form
-  -#   .new-message
-  -#     .input-form
-  -#       %input{class: "input-form__new-text", type: "text", placeholder: "type a message"}
-  -#       %label{class: "input-form__new-image"} 
-  -#         = icon('fa', 'image')
-  -#         %input{type: "file"}
-  -#     %input{class: "submit-btn", type: "submit",name: "commit", value: "Send"}
