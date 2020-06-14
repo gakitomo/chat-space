@@ -6,6 +6,7 @@
 
   .side_bar {
     width: 300px;
+    height: 100vh;
     color: #ffffff;
     float: left;
     .user-name {
@@ -31,6 +32,7 @@
       height: calc(100vh - 100px);
       background-color: #2f3e51;
       padding: 20px 20px 0;
+      overflow: scroll;
       .group-name {
         margin-bottom: 5px;
         font-size: 15px;
